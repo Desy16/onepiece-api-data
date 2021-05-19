@@ -1,0 +1,18 @@
+{{> header}}
+
+<div id="wrapper2">
+		<div id="welcome" class="container">
+			<div class="title">
+				<h2>Liste des chapitres de One Piece</h2>
+			</div>
+				<p class='box-chapter' >
+					{{#each resp.items as |cValue hKey|}}
+						<ul class='wrapper-chapter'>
+							<li><a href="#">{{ cValue.chapter }} - {{ cValue.title }}</a></li><br/>
+						</ul>
+					{{/each}}
+				</p>
+		</div>
+</div>
+
+{{> footer}}
